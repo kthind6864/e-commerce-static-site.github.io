@@ -1,4 +1,4 @@
-$primery: green;
+$primery: #008000;
 $secndory: black;
 $third: white;
 
@@ -149,5 +149,28 @@ i {
             margin: auto 10px auto auto;
         }
 
+    }
+}
+
+// Main banner
+.box{
+    position: relative;
+    z-index: -1;
+    .box-bg{
+    z-index: 0;
+    width: 100%;
+  
+
+    }
+    .top-box{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+
+        .bg-shoes{
+            width:600px;
+            height: 500px;
+        }
+        
     }
 }

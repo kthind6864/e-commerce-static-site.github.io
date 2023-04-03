@@ -62,7 +62,7 @@ i {
   margin-left: 15px;
 }
 .nav-top .log a:hover {
-  color: green;
+  color: #008000;
 }
 
 .nav-bottem {
@@ -109,7 +109,7 @@ i {
 .nav-bottem .nav-side .Search-form .Search-btn {
   border: solid rgba(0, 0, 0, 0.063) 1px;
   border-left: none;
-  background-color: green;
+  background-color: #008000;
   padding: 5px 10px;
 }
 .nav-bottem .nav-side .Search-form .Search-btn .bi-search {
@@ -119,4 +119,22 @@ i {
 .nav-bottem .nav-side .cart {
   font-size: 20px;
   margin: auto 10px auto auto;
+}
+
+.box {
+  position: relative;
+  z-index: -1;
+}
+.box .box-bg {
+  z-index: 0;
+  width: 100%;
+}
+.box .top-box {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.box .top-box .bg-shoes {
+  width: 600px;
+  height: 500px;
 }/*# sourceMappingURL=style.css.map */
