@@ -1,6 +1,6 @@
 $primery: green;
 $secndory: black;
-
+$third: white;
 
 //Basic
 body {
@@ -78,5 +78,76 @@ i {
                 color: $primery;
             }
         }
+    }
+}
+
+// Bottem nav
+.nav-bottem {
+    display: grid;
+    grid-template-areas: "brand nav-links nav-links side";
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.15);
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .brand {
+        grid-area: brand;
+    }
+
+    .nav-mobile {
+        grid-area: nav-links;
+
+        ul {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            .nav-items {
+                padding: 38px 20px 30px 20px;
+            }
+        }
+
+    }
+
+    .nav-side {
+        grid-area: side;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        .Search-form {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            .Search-input {
+                border: solid rgba(0, 0, 0, 0.063) 1px;
+                border-right: none;
+                padding: 5px 10px;
+            }
+
+            .Search-btn {
+                border: solid rgba(0, 0, 0, 0.063) 1px;
+                border-left: none;
+                background-color: $primery;
+                padding: 5px 10px;
+
+                .bi-search {
+                    color: $third;
+                }
+
+            }
+
+            margin-right: 10px;
+        }
+
+        .fav,
+        .cart {
+            font-size: 20px;
+            margin: auto 10px auto auto;
+        }
+
     }
 }
