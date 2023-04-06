@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="./bootstrap-5.3.0/icons/bootstrap-icons.css">
     <link rel="stylesheet" href="./style/style.css">
 </head>
+
 <body>
     <nav>
         <div class="nav-top">
@@ -29,48 +31,87 @@
             </div>
         </div>
         <div class="nav-bottem">
-            <div class="brand">
-                <img src="./img/brand-icon.png" alt="Ex shoping">
-            </div>
-            <div class="nav-mobile">
-                <ul>
-                    <li class="nav-items"><a href="#">Home</a></li>
-                    <li class="nav-items"><a href="#">Men</a></li>
-                    <li class="nav-items"><a href="#">Women</a></li>
-                    <li class="nav-items"><a href="#">Kids</a></li>
-                    <li class="nav-items"><a href="#">Sports</a></li>
-                    <li class="nav-items"><a href="#">Brand</a></li>
-                </ul>
-            </div>
-            <div class="nav-side">
-                <form class="Search-form">
-                    <input type="text" placeholder="Search" class="Search-input">
-                    <button class="Search-btn"><i class="bi bi-search"></i></button>
-                </form>
-                <div class="bi bi-heart fav"></div>
-                <div class="bi bi-bag cart"></div>
-            </div>
-        </div>
-    </nav>
-    <main>
-        <div class="box">
-            <img src="./img/banner-bg.jpg" class="box-bg">
-            <div class="top-box">
-                <div class="container-fulid">
-                    <div class="row">
-                   <div class="col-lg-6 col-md-12 right">
-                   </div>
-                    <div class="col-lg-6 .d-sm-none .d-md-block left">
-                        <img src="./img/banner-bg-shoes.png" class="bg-shoes">
-                    </div>  
-                    </div>
+            <div class="navbar-expand-lg   navbar p-0 px-lg-4 px-md-2 px-sm-0">
+                <div class="container-fluid p-0">
+                    <a class="navbar-brand" href="#"><img src="./img/brand-icon.png"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class=" navbar-collapse collapse" id="navbarScroll">
+                        <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
+                            <li class="nav-item">
+                                <a class="active nav-link " aria-current="page" href="#">Home</a>
+                            </li>
 
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                 Men
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Women
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Kids
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#">Brand</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#">Sports</a>
+                            </li>
+
+                        </ul>
+                        <form class="d-flex align-items-center search-form mt-2 ms-4" role="search">
+                            <input class="input-search me-0" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn-search  me-2" type="submit"><i class="bi bi-search"></i></button>
+                            <a href="#" class="bi bi-heart me-2 fav"></a>
+                            <a href="#" class="bi bi-bag me-2 cart"></a>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
+</div>
+
+    </nav>
+    
+    <main>
+
     </main>
     <footer>
-        <script src="./bootstrap-5.3.0/js/bootstrap.min.js"></script>
+        <script src="./bootstrap-5.3.0/js/bootstrap.bundle.js"></script>
+       
     </footer>
 </body>
+
 </html>

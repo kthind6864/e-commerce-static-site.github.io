@@ -30,6 +30,10 @@ i {
     text-decoration: none;
     list-style: none;
 }
+nav{
+    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
 
 //Top Nav Bar
 .nav-top {
@@ -38,7 +42,7 @@ i {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.067);
     padding: 5px 20px;
-
+   width: 100%;
     .social-media {
         display: flex;
         align-items: center;
@@ -80,97 +84,56 @@ i {
         }
     }
 }
-
-// Bottem nav
-.nav-bottem {
-    display: grid;
-    grid-template-areas: "brand nav-links nav-links side";
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.15);
-    padding-left: 20px;
-    padding-right: 20px;
-
-    .brand {
-        grid-area: brand;
-    }
-
-    .nav-mobile {
-        grid-area: nav-links;
-
-        ul {
-            display: flex;
-            justify-content: end;
-            align-items: center;
-
-            .nav-items {
-                padding: 38px 20px 30px 20px;
-            }
-        }
-
-    }
-
-    .nav-side {
-        grid-area: side;
-        display: flex;
+.nav-bottem{
+    .collapse{
         justify-content: end;
-        align-items: center;
-
-        .Search-form {
-            display: flex;
-            justify-content: end;
-            align-items: center;
-
-            .Search-input {
-                border: solid rgba(0, 0, 0, 0.063) 1px;
-                border-right: none;
-                padding: 5px 10px;
-            }
-
-            .Search-btn {
-                border: solid rgba(0, 0, 0, 0.063) 1px;
-                border-left: none;
-                background-color: $primery;
-                padding: 5px 10px;
-
-                .bi-search {
-                    color: $third;
-                }
-
-            }
-
-            margin-right: 10px;
+ 
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; 
+    }
+    .dropdown-menu{
+    border-radius: 0;
+    
+    }
+    .input-search{
+       border-radius: 0px;
+      color: $third;
+      border: solid rgba(0, 0, 0, 0.5) 1px;
+      height: 35px;
+       
+    }
+    .btn-search{
+        border: none;
+        color: $third;
+        background-color: $primery;
+        padding: 6px 8px;
+        .bi-search{
+            color: $third;
         }
-
-        .fav,
-        .cart {
-            font-size: 20px;
-            margin: auto 10px auto auto;
-        }
+    }
+   
+   .fav,.cart{
+       font-size: 20px;
+       
+    }
+    .nav-link {
+        padding:30px 15px 20px 15px;
 
     }
-}
-
-// Main banner
-.box{
-    position: relative;
-    z-index: -1;
-    .box-bg{
-    z-index: 0;
-    width: 100%;
-  
-
-    }
-    .top-box{
-        position: absolute;
-        top: 0px;
-        width: 100%;
-
-        .bg-shoes{
-            width:600px;
-            height: 500px;
+    .nav-item{
+        position: relative;
+        &:hover{
+        &::after{
+            position: absolute;
+            width: 100%;
+            content: "";
+            height: 4px;
+            background-color: $primery;
+            bottom: 0px;
         }
-        
     }
+    }
+ 
 }
