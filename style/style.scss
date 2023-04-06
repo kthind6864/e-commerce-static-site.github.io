@@ -6,7 +6,7 @@ $third: white;
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Times New Roman', Times, serif;
     color: $secndory;
 }
 
@@ -31,8 +31,11 @@ i {
     list-style: none;
 }
 nav{
-    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.1);
     width: 100%;
+    position: fixed;
+    background-color: $third;
+    z-index: 999;
 }
 
 //Top Nav Bar
@@ -137,3 +140,93 @@ nav{
     }
  
 }
+.box{
+    width: 100%;
+    height:100%;
+    z-index: 0; 
+
+}
+.bg-img{
+    background-image: url(../img/banner-bg.jpg);
+    width: 100%;
+    height: 600px;
+    z-index: 1;
+}
+.box-inner{
+    top: 200px;
+   width: 100%;
+}
+.inner-contaner{
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    width: 950px;
+    margin: auto;
+
+}
+.left,.right{
+   margin: 20px;
+}
+.right{
+    transform:rotate(-20deg);
+}
+.info-box{
+    text-align: center;
+    p{
+       margin:20px 0px;
+       text-align: start;
+       color:rgba(0, 0, 0, 0.6);
+    }
+    .title{
+        font-size: 50px;
+        font-weight:600;
+        line-height: 50px;
+        color:$secndory;
+    } 
+    .add-btn-bg{
+        margin: 5px;
+        padding: 5px 12px;
+        border: none;
+        border-radius: 100px;
+        background-color:rgba(0, 0, 0, 0);
+        i{
+           background-color: $primery;
+            font-size: 20px;
+            padding:10px 15px;
+            border-radius: 30px;
+            color: $third;
+        }
+    }
+}
+.features{
+    margin: 100px 40px;
+    .container{
+       .card{
+        border: none;
+        text-align: center;
+        border-radius: 0px;
+        i{
+            font-size: 30px;
+            font-weight: 800;
+        }
+        h6{
+            font-size: 20px;
+            margin: 10px 0px;
+            font-weight: 600;
+        }
+        p{
+            color:rgba(0, 0, 0, 0.6);
+            font-size: 15px;
+        }
+        &:nth-child(2){
+            border-right: solid rgba(0, 0, 0, 0.1) 2px;
+            border-left: solid rgba(0, 0, 0, 0.1) 2px;
+        }
+        &:nth-child(3){
+            border-right: solid rgba(0, 0, 0, 0.1) 2px;
+        }
+       }
+    }
+}
+
